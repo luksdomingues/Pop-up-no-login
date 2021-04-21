@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: linear-gradient(90deg, #5B2333, #F24333);
+    min-height: 100vh;
+    min-width: 100vh;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    position: absolute;
+    left: 40%;
+    top: 40%;
+    transform: translateY(-50%, -50%);
+    text-align: center;
+}
+
+.container h1 {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    /*2.5rem é Igual a 36px*/
+    margin-bottom: 40px;
+}
+
+.button {
+    background: white;
+    padding: 10px 15px;
+    color: #F24333;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    box-shadow: 6px 6px 29px -4px rgb(0, 0, 0, 0.75);
+    margin-top: 0;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.button:hover {
+    background: #5B2333;
+    color: white;
+}
+
+.popup {
+    background: rgb(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.popup-content {
+    width: 500px;
+    height: 550px;
+    background: linear-gradient(45deg, #5B2333, #F24333);
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.popup-content .face {
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(to right, #091540, #383961);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 25%;
+}
+
+.popup-content .face:hover {
+    color: #CCCCCC;
+}
+
+.popup-content .twit {
+    width: 50%;
+    height: 40px;
+    background: linear-gradient(to right, #6184D8, #7A89C2);
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    margin-left: 25%;
+}
+
+.popup-content .twit:hover {
+    color: #CCCCCC;
+}
+
+.popup-content .twit {
+    color: white;
+}
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    height: -70%;
+    padding: 8%;
+    border: 1px solid #000000;
+    border-radius: 8px;
+}
+
+.close {
+    position: absolute;
+    top: -25px;
+    right: -25px;
+    background: #000;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgb(0, 0, 0, 0.75);
+    cursor: pointer;
+}

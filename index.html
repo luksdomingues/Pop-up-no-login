@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login com Pop-Up</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Pop-up Login</h1>
+        <a href="#" class="button" id="button">Login</a>
+    </div>
+
+    <div class="popup">
+        <div class="popup-content">
+            <img src="close.png" alt="Close" class="close" style="height: 50px; width: 50px;">
+            <img src="user.png" alt="User" style="width: 57px; height: 50px;">
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <h2>OR</h2>
+            <a href="#" class="face">Login With Facebook</a> <br>
+
+            <a href="#" class="twit">Login With Twitter</a> <br><br><br>
+            <a href="#" class="button">Login</a>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("button").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "flex";
+        }) /*SEMPRE CHECAR SE OS ELEMENTOS ID OU CLASS ESTAO NAS TAGS CITADAS NO SCRIPT. E COLOCAR O LINK OU A # PARA ABRIR POP-UP*/
+
+        document.querySelector(".close").addEventListener("click", function() {
+            document.querySelector(".popup").style.display = "none";
+        }) /*USEI PARA ABRIR UMA POP-UP COM O FUNDO ESCURO. SERVE MUITO PARA FAZER UM LOGIN SEM TER Q SAIR DA PAGE*/
+    </script>
+</body>
+
+</html>
